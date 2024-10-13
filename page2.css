@@ -1,0 +1,75 @@
+@charset "UTF-8";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('flaga.png');
+    font-family: 'Monaco';
+}
+
+h1, h2, h3 {
+    color:#9a0000;
+}
+
+.bolid {
+    max-width: 35%;
+    height: auto;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 80%;
+    height: auto;
+}
+
+h2, h3, p {
+    border: 2px solid #0f0707;
+    padding: 10px;
+    border-radius: 5px;
+    margin: 20px 0;
+    background-color: #FFFFFF;
+    border-color: #9a0000;
+}
+
+.lista, .styl {
+    list-style-type: none;
+    margin: 0;
+    padding-left: 0;
+}
+
+.sidebar {
+    display: flex;
+}
+
+.lista {
+    flex: 1;
+    margin-right: 20px;
+    border: 2px solid #0f0707;
+    border-color: #9a0000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.right-column {
+    display: flex;
+    flex-direction: column;
+}
+
+footer, .styl {
+    border: 2px solid #0f0707;
+    border-color: #9a0000;
+    border-radius: 5px;
+    padding: 10px;
+    background-color: #FFFFFF;
+    margin: 10px 0;
+}
+
+.styl {
+    margin-bottom: 20px;
+}
