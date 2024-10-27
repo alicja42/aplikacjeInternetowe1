@@ -20,6 +20,7 @@ class Todo{
     editTask(indeks, newText){
         if(newText.length>=3 && newText.length<=255){
             this.tasks[indeks].text=newText;
+            this.tasks[indeks].date=newDate;
             this.saveTasks();
             this.draw();
         } else if(newText.length<3){
@@ -50,8 +51,14 @@ class Todo{
             taskSpan.innerHTML=this.highlightText(task.text, this.term);
             taskSpan.contentEditable=true;
 
+            const dueDateInput=document.createElement('input');
+            dueDateInput.type='date';
+            dueDateInput.value=task.date || '';
+            dueDateInput.classList.add('kalendarz');
+
             taskSpan.addEventListener('blur', () => {
                 const newText=taskSpan.textContent;
+                const newDate=dueDateInput.value;
                 this.editTask(indeks, newText);
             });
 
@@ -66,7 +73,7 @@ class Todo{
             });
 
             li.appendChild(taskSpan);
-            li.appendChild(dueDateSpan);
+            li.appendChild(dueDateInput);
             li.appendChild(deleteBtn);
             taskList.appendChild(li);
         });
