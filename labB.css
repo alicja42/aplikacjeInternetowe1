@@ -56,6 +56,13 @@ body {
     font-size: medium;
 }
 
+.kalendarz {
+    padding: 10px;
+    border: 1px solid #CCCCFF;
+    border-radius: 5px;
+    font-size: small;
+}
+
 .lista {
     list-style: none;
     padding: 0;
