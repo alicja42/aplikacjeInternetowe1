@@ -11,10 +11,12 @@ document.getElementById('szukaj').addEventListener('click', function(){
 
     const currentWeatherUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
     const xhr=new XMLHttpRequest();
+    console.log(currentWeatherUrl);
     xhr.open('GET', currentWeatherUrl, true);
     xhr.onload=function(){
         if (xhr.status===200){
             const weatherData=JSON.parse(xhr.responseText);
+            console.log(weatherData);
             displayCurrentWeather(weatherData);
         } else{
             alert("Nie udało się pobrać pogody");
@@ -23,12 +25,16 @@ document.getElementById('szukaj').addEventListener('click', function(){
     xhr.send();
 
     const forecastUrl=`https://api.openweathermap.org/data/2.5/forecast?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
+    console.log(forecastUrl);
     fetch(forecastUrl)
         .then(response=>{
             if(!response.ok)throw new Error("Nie udało się pobrać pogody");
             return response.json();
         })
-        .then(forecastData=>displayWeatherForecast(forecastData))
+        .then(forecastData =>{
+            console.log(forecastData);
+            displayWeatherForecast(forecastData);
+        })
         .catch(error=>alert(error.message));
 });
 
