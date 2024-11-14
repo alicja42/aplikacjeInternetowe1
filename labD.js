@@ -7,7 +7,7 @@ document.getElementById('szukaj').addEventListener('click', function(){
 
     document.getElementById('pogoda').innerHTML='';
 
-    const apiKey='d78529415fda3ba888929ff347cfda80';
+    const apiKey='';
 
     const currentWeatherUrl=`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric&lang=pl`;
     const xhr=new XMLHttpRequest();
