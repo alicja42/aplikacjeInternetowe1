@@ -1,0 +1,67 @@
+@charset "UTF-8";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'The Aesthetic Essential', sans-serif;
+    font-style: normal;
+    background-color: #c9e9f6;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+    margin: 0 auto;
+    max-width: 100%;
+    height: auto;
+}
+
+header {
+    font: 150%;
+    font-family: 'The Aesthetic Essential', sans-serif;
+    color: #45b3e0;
+    text-align: center;
+}
+
+p, p1, p2, p3 {
+    color: #45b3e0;
+}
+
+h1, h2, h3 {
+    color: #45b3e0;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 250px;
+    gap: 20px;
+    margin: 20px;
+}
+
+.main {
+    background: #c9e9f6;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+}
+
+section {
+    margin-bottom: 20px;
+}
+
+ul {
+    font: garamond, serif;
+    color: #45b3e0;
+}
+
+.sidebar {
+    background-color: #c9e9f6;
+    padding: 15px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    height: auto;
+}
