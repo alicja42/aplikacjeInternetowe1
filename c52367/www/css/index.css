@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url('clouds.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    width: 400px;
+    margin: 20px auto;
+    padding: 10px;
+    background-color: #ffffff;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    text-align: center;
+    background-color: #c5b9cd;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Rachelna', sans-serif;
+}
+
+button#szukaj {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dec2cb;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Andreas', sans-serif;
+    background-color: #dec2cb;
+}
+
+#search {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #dec2cb;
+    border-radius: 5px;
+    font-size: medium;
+    font-family: 'Andreas', sans-serif;
+    background-color: #dec2cb;
+}
+
+.lista {
+    list-style: none;
+    padding: 0;
+    margin-top: 10px;
+}
+
+.lista li {
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-family: 'Andreas', sans-serif;
+}
